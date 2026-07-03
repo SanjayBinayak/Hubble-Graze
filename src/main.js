@@ -72,3 +72,16 @@ function imageByDate() {
 document
   .getElementById("by-date")
   .addEventListener("click", imageByDate);
+
+const night = document.querySelector(".night");
+
+for (let i = 0; i < 20; i++) {
+    const star = document.createElement("div");
+    star.className = "star";
+
+    star.style.top = Math.random() * 100 + "%";
+    star.style.left = Math.random() * 100 + "%";
+    star.style.animationDelay = Math.random() * 5 + "s";
+
+    night.appendChild(star);
+}
