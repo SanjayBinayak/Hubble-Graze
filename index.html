@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <div class="hellow"></div>
-
+    <div class="main">
+      <h1 id="header">Hubbel Graze</h1>
+      <p id="tagline">A platform for you to graze universe from eyes of NASA</p>
+    </div>
+    <div class="options">
+      <button id="today" onclick="imageByDate()">Get today's image</button>
+      <input type="date" id="date">
+      <button id="by-date">Get image by date</button>
+    </div>
 
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>

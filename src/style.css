@@ -14,7 +14,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #00d9ff;
+    background: #152238;
 }
 
 #app {
@@ -24,24 +24,26 @@ body::before {
     text-align: center;
 }
 
-h1 {
+#app h1 {
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 1rem;
-    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.75rem;
+    font-family: Papyrus, cursive;
     font-weight: 900;
     text-decoration: underline;
 
 }
 
-img, video, iframe {
+#app img, #app video, #app iframe {
     max-width: 100%;
     height: auto;
     margin: 1rem 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
 }
 
-p {
+#app p {
     font-size: 0.95rem;
     color: #fff;
     line-height: 1.6;
@@ -56,4 +58,93 @@ p {
     #app {
         max-width: 700px;
     }
+}
+
+
+
+.main {
+    padding: 0.6 rem;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.main h1{
+    font-size: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #c3bfbf;
+}
+
+.main p {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+.slide-in {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+#tagline {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  animation:
+    typing 3.5s steps(47, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 54ch;
+  }
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.options button {
+    text-align: center;
+    border: solid #c3bfbf;
+    background-color: #c3bfbf;
+    border-radius: 10px;
+    height: 30PX;
+    width: fit-content;
+}
+
+.options button:hover{
+    background-color: #9d9d9d;
+}
+
+.options input {
+    border: #c3bfbf;
+    background-color: #c3bfbf;
+    border-radius: 10px;
+    height: 30px;
 }
